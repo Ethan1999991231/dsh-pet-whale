@@ -7,7 +7,7 @@ import { readFileSync, writeFileSync } from 'node:fs'
 
 const 宠 = readFileSync('assets/pet.js', 'utf8')
 
-const 头 = `// 鲸鱼娘桌宠 · 网页半边（DSH client bundle 通道）
+const 头 = `// 大肥鱼桌宠 · 网页半边（DSH client bundle 通道）
 //
 // 这个文件由 preview/build_client.mjs 生成：把 assets/pet.js 原样裹进
 // window.__ModuleLoader__.load 的外壳。要改行为请改 assets/pet.js 再重新生成，
