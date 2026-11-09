@@ -11,3 +11,12 @@ preview/*.bat
 preview/build.sh
 preview/gh_create.mjs  
 preview/gh_repo_create.ps1  
+
+# 这些脚本会去读本机 Windows 凭据，只该留在机器上，不进仓库
+preview/push.ps1
+preview/token.ps1
+preview/desc.ps1
+preview/probe_cred.mjs
+preview/publish.mjs
+preview/set_desc.mjs
+preview/*.b64
