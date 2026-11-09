@@ -9,3 +9,5 @@ preview/*.txt
 preview/*.html
 preview/*.bat
 preview/build.sh
+preview/gh_create.mjs  
+preview/gh_repo_create.ps1  
