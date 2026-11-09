@@ -1,0 +1,63 @@
+{
+  "name": "dsh-pet-whale-app",
+  "productName": "大肥鱼桌宠",
+  "version": "1.0.0",
+  "description": "大肥鱼桌宠 · 独立桌面版：尾巴会摆、左键碎碎念、右键报余额、可拖动",
+  "main": "main.js",
+  "author": "Ethan",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "sync": "node tools/sync.mjs",
+    "icon": "python tools/icon.py",
+    "pack": "electron-packager . \"大肥鱼桌宠\" --platform=win32 --arch=x64 --out=dist --overwrite --asar --icon=build/whale.ico --ignore=\"^/preview\" --ignore=\"^/dist\" --ignore=\"^/release\" --ignore=\"^/probe\" --ignore=\"^/run\\.bat\"",
+    "dist": "electron-builder --win nsis --x64"
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^26.18.0",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "com.ethan.dshpetwhale",
+    "productName": "大肥鱼桌宠",
+    "copyright": "Ethan",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "server.js",
+      "preload.js",
+      "ui/**/*",
+      "assets/**/*",
+      "build/tray*.png",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/whale.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "大肥鱼桌宠",
+      "uninstallDisplayName": "大肥鱼桌宠",
+      "artifactName": "大肥鱼桌宠-${version}-安装包.${ext}",
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}

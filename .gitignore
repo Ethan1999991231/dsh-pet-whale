@@ -12,6 +12,14 @@ preview/build.sh
 preview/gh_create.mjs  
 preview/gh_repo_create.ps1  
 
+# EXE 版：源码进 repo，构建产物不进
+app/node_modules/
+app/dist/
+app/release/
+app/preview/
+app/*.log
+app/run.bat
+
 # 这些脚本会去读本机 Windows 凭据，只该留在机器上，不进仓库
 preview/push.ps1
 preview/token.ps1

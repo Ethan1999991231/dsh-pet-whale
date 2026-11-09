@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>大肥鱼桌宠</title>
+<style>
+  html, body { margin: 0; padding: 0; width: 100%; height: 100%; background: transparent; overflow: hidden; }
+  body { -webkit-user-select: none; user-select: none; }
+</style>
+</head>
+<body>
+<script>
+  // 服务器地址由主进程通过 query 传进来
+  window.__PET_BASE__ = new URLSearchParams(location.search).get('base') || ''
+
+  // ---- 鼠标穿透：只在她（或设置面板）身上让窗口接收点击，其余全穿透 ----
+  var 上次穿透 = true
+  function 设穿透(要穿透) {
+    if (要穿透 === 上次穿透) return
+    上次穿透 = 要穿透
+    try { window.petApp && window.petApp.穿透(要穿透) } catch (e) {}
+  }
+  function 查(e) {
+    var el = document.elementFromPoint(e.clientX, e.clientY)
+    var 命中 = !!(el && el.closest && el.closest('#dpw'))
+    设穿透(!命中)
+  }
+  document.addEventListener('mousemove', 查, true)
+  document.addEventListener('mouseleave', function () { 设穿透(true) }, true)
+  window.addEventListener('blur', function () { 设穿透(true) })
+  // 万一哪次卡住不让点了，5 秒兜底回穿透（鼠标不在她身上时不打断）
+  setInterval(function () {
+    if (!上次穿透) return
+    // 保持穿透时无需动作
+  }, 5000)
+
+  var s = document.createElement('script')
+  s.src = (window.__PET_BASE__ || '') + '/dsh-pet-whale/pet.js'
+  s.onerror = function () { document.title = 'PET_JS_FAIL' }
+  document.body.appendChild(s)
+</script>
+</body>
+</html>
