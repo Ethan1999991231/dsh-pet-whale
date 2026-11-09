@@ -27,4 +27,5 @@ preview/desc.ps1
 preview/probe_cred.mjs
 preview/publish.mjs
 preview/set_desc.mjs
+preview/desc_update.mjs
 preview/*.b64
