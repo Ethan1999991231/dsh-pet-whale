@@ -1,0 +1,40 @@
+{
+  "name": "dsh-pet-whale",
+  "version": "1.0.0",
+  "description": "蓝发鲸鱼娘桌宠：尾巴自己会摆，点一下 Q 弹一下顺手弹出 DeepSeek 余额；哪间会话在跑，她左上角就冒一个思考窗。",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "desktop-pet",
+    "whale",
+    "balance"
+  ],
+  "main": "lib/host.js",
+  "exports": {
+    ".": "./lib/host.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "external": []
+    }
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1-rc.2"
+  }
+}

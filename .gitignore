@@ -1,0 +1,11 @@
+node_modules/
+*.zip
+.DS_Store
+
+# preview/ 里只留开发脚本，截图、DOM dump、临时页面不入库
+preview/*.png
+preview/*.log
+preview/*.txt
+preview/*.html
+preview/*.bat
+preview/build.sh
