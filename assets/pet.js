@@ -213,12 +213,12 @@
     '.dpw-b-err{max-width:190px;white-space:normal;font-size:11px;opacity:.7;margin-top:2px}',
 
     // 设置面板：鼠标放她身上按 S 打开，面板贴在她左边（贴右边缘自动翻到右边）
-    '#dpw-set{position:absolute;z-index:6;right:calc(100% + 12px);bottom:0;width:254px;',
-    'max-height:min(620px,calc(100vh - 36px));',
+    '#dpw-set{position:absolute;z-index:6;right:calc(100% + 12px);bottom:0;width:302px;',
+    'max-height:calc(100vh - 56px);',
     'overflow:auto;overscroll-behavior:contain;padding:11px 11px 9px;border-radius:14px;',
     'background:rgba(255,255,255,.985);border:1px solid rgba(58,92,148,.18);',
     'box-shadow:0 18px 40px rgba(28,52,96,.22);',
-    'font:12px/1.5 -apple-system,"Segoe UI",system-ui,"Microsoft YaHei",sans-serif;color:#1e2a3d;',
+    'font:12.5px/1.55 -apple-system,"Segoe UI",system-ui,"Microsoft YaHei",sans-serif;color:#1e2a3d;',
     'opacity:0;transform:translateX(8px) scale(.97);transform-origin:100% 100%;pointer-events:none;',
     'transition:opacity .18s ease,transform .18s ease;}',
     '#dpw-set.dpw-show{opacity:1;transform:none;pointer-events:auto}',
@@ -227,38 +227,38 @@
     'transform-origin:0 100%}',
     '#dpw.dpw-set-r #dpw-set.dpw-show{transform:none}',
     '#dpw.dpw-dark #dpw-set{background:rgba(26,32,44,.985);border-color:rgba(140,172,224,.24);color:#e7eefb}',
-    '.dpw-s-t{display:flex;align-items:center;gap:6px;font-weight:650;font-size:12px;margin-bottom:8px}',
-    '.dpw-s-t i{margin-left:auto;font-style:normal;font-weight:500;opacity:.45;font-size:10.5px}',
-    '.dpw-s-g{margin:8px 0 0;padding-top:8px;border-top:1px solid rgba(58,92,148,.12)}',
+    '.dpw-s-t{display:flex;align-items:center;gap:6px;font-weight:650;font-size:13px;margin-bottom:9px}',
+    '.dpw-s-t i{margin-left:auto;font-style:normal;font-weight:500;opacity:.45;font-size:11px}',
+    '.dpw-s-g{margin:9px 0 0;padding-top:9px;border-top:1px solid rgba(58,92,148,.12)}',
     '.dpw-s-g:first-of-type{margin-top:0;padding-top:0;border-top:0}',
-    '.dpw-s-l{font-size:10.5px;letter-spacing:.3px;opacity:.5;margin-bottom:4px}',
-    '.dpw-s-r{display:flex;align-items:center;gap:7px;margin:5px 0}',
-    '.dpw-s-r>label{flex:0 0 58px;font-size:11.5px;opacity:.72}',
+    '.dpw-s-l{font-size:11px;letter-spacing:.3px;opacity:.5;margin-bottom:5px}',
+    '.dpw-s-r{display:flex;align-items:center;gap:7px;margin:6px 0}',
+    '.dpw-s-r>label{flex:0 0 62px;font-size:12.5px;opacity:.75}',
     '.dpw-s-r>input[type=range]{flex:1;min-width:0;height:16px;accent-color:#3b7bd4;cursor:pointer}',
-    '.dpw-s-r>.v{flex:0 0 36px;text-align:right;font-size:11px;opacity:.55;',
+    '.dpw-s-r>.v{flex:0 0 40px;text-align:right;font-size:11.5px;opacity:.55;',
     'font-variant-numeric:tabular-nums}',
-    '.dpw-s-snd{display:flex;gap:4px;margin:3px 0 5px}',
-    '.dpw-s-file{display:flex;gap:4px;align-items:center;margin:4px 0}',
-    '.dpw-s-file button{flex:0 0 auto;padding:3px 8px;border-radius:8px;cursor:pointer;',
-    'border:1px solid rgba(58,92,148,.2);background:transparent;color:inherit;font:inherit;font-size:11px}',
-    '.dpw-s-file select{flex:1 1 auto;min-width:0;padding:3px 4px;border-radius:8px;',
-    'border:1px solid rgba(58,92,148,.2);background:transparent;color:inherit;font:inherit;font-size:11px}',
-    '.dpw-s-k{flex:0 0 30px;font-size:11px;opacity:.7}',
-    '.dpw-s-snd button{flex:1 1 0;min-width:0;padding:3px 1px;border-radius:8px;cursor:pointer;',
-    'border:1px solid rgba(58,92,148,.2);background:transparent;color:inherit;font:inherit;',
-    'font-size:10.5px;white-space:nowrap;overflow:hidden}',
+    '.dpw-s-snd{display:flex;gap:5px;margin:4px 0 6px}',
+    '.dpw-s-file{display:flex;gap:5px;align-items:center;margin:5px 0}',
+    '.dpw-s-file button{flex:0 0 auto;padding:4px 9px;border-radius:8px;cursor:pointer;',
+    'border:1px solid rgba(58,92,148,.22);background:transparent;color:inherit;font:inherit;font-size:12px}',
+    '.dpw-s-file select{flex:1 1 auto;min-width:0;padding:4px 6px;border-radius:8px;',
+    'border:1px solid rgba(58,92,148,.22);background:transparent;color:inherit;font:inherit;font-size:12px}',
+    '.dpw-s-k{flex:0 0 34px;font-size:12px;opacity:.72}',
+    '.dpw-s-snd button{flex:1 1 0;min-width:0;padding:4px 1px;border-radius:8px;cursor:pointer;',
+    'border:1px solid rgba(58,92,148,.22);background:transparent;color:inherit;font:inherit;',
+    'font-size:12px;white-space:nowrap;text-align:center}',
     '.dpw-s-snd button:hover{background:rgba(59,123,212,.13);border-color:rgba(59,123,212,.45)}',
     '.dpw-s-snd button:active{transform:scale(.96)}',
-    '.dpw-s-sw{display:flex;align-items:center;gap:7px;margin:6px 0;font-size:11.5px;cursor:pointer}',
+    '.dpw-s-sw{display:flex;align-items:center;gap:7px;margin:7px 0;font-size:12.5px;cursor:pointer}',
     '.dpw-s-sw input{accent-color:#3b7bd4;margin:0;cursor:pointer}',
-    '.dpw-s-ta{width:100%;box-sizing:border-box;min-height:66px;resize:vertical;padding:6px 8px;',
+    '.dpw-s-ta{width:100%;box-sizing:border-box;min-height:76px;resize:vertical;padding:7px 9px;',
     'border-radius:9px;border:1px solid rgba(58,92,148,.22);background:rgba(120,150,200,.07);',
-    'color:inherit;font:11.5px/1.5 inherit;outline:none}',
+    'color:inherit;font:12px/1.55 inherit;outline:none}',
     '.dpw-s-ta:focus{border-color:rgba(59,123,212,.6)}',
-    '.dpw-s-h{margin-top:5px;font-size:10.5px;opacity:.45;line-height:1.45}',
+    '.dpw-s-h{margin-top:6px;font-size:11px;opacity:.5;line-height:1.5}',
     '.dpw-s-f{display:flex;gap:6px;margin-top:10px;padding-top:8px;border-top:1px solid rgba(58,92,148,.12)}',
-    '.dpw-s-f button{flex:1;padding:5px 0;border-radius:9px;cursor:pointer;',
-    'border:1px solid rgba(58,92,148,.2);background:transparent;color:inherit;font:inherit;font-size:11.5px}',
+    '.dpw-s-f button{flex:1;padding:7px 0;border-radius:9px;cursor:pointer;',
+    'border:1px solid rgba(58,92,148,.22);background:transparent;color:inherit;font:inherit;font-size:12.5px}',
     '.dpw-s-f button:hover{background:rgba(59,123,212,.13)}',
     '#dpw.dpw-dark #dpw-bubble{background:rgba(26,32,44,.96);border-color:rgba(140,172,224,.22);color:#e7eefb}',
   ].join('')
@@ -590,16 +590,15 @@
       bubble.appendChild(el('div', 'dpw-b-err', b.error || '读不到余额'))
       return
     }
-    // 只报一条：优先有钱的那条（CNY 优先），全零才退回第一条
-    // 之前死认 CNY，钱全在美元上时会一直显示 0.00
+    // 只报一条：**人民币永远排第一**，没有再退有余额的那条，最后才退第一条
     var 钱包 = (b.wallets && b.wallets.length) ? b.wallets : []
     var w = null
-    for (var i = 0; i < 钱包.length; i++) {
-      if (Number(钱包[i].total) > 0) { w = 钱包[i]; break }
+    for (var j = 0; j < 钱包.length; j++) {
+      if (String(钱包[j].currency).toUpperCase() === 'CNY') { w = 钱包[j]; break }
     }
     if (!w) {
-      for (var j = 0; j < 钱包.length; j++) {
-        if (String(钱包[j].currency).toUpperCase() === 'CNY') { w = 钱包[j]; break }
+      for (var i = 0; i < 钱包.length; i++) {
+        if (Number(钱包[i].total) > 0) { w = 钱包[i]; break }
       }
     }
     if (!w) w = 钱包[0] || { currency: b.currency || 'CNY', total: b.remaining, granted: b.granted, topped: b.topped }
@@ -807,9 +806,19 @@
     设.classList.toggle('dpw-show', 设开)
     if (设开) {
       重画设置()
+      // 面板默认从她的脚底往上长；上头顶出视口就改成从顶往下长
+      设.style.top = 'auto'
+      设.style.bottom = '0'
+      var 高 = 设.offsetHeight || 0
+      if (高 && 本地.y + 大小 - 高 < 8) {
+        设.style.bottom = 'auto'
+        设.style.top = Math.round(8 - 本地.y) + 'px'
+      }
       // 思考窗会压到面板右上角，先收起来；关面板时再画回来
       think.classList.remove('dpw-show')
     } else {
+      设.style.top = 'auto'
+      设.style.bottom = '0'
       画思考()
     }
   }
