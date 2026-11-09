@@ -7,7 +7,7 @@
 | 你要的 | 装这个 |
 | --- | --- |
 | 挂进 DSH 页面里 | 本仓库根的插件本体（`package.json` / `lib/` / `assets/`），或 Release 里的 `dsh-pet-whale-1.0.0.zip` |
-| 不装 DSH 也能玩 | [Release](https://github.com/Ethan1999991231/dsh-pet-whale/releases/latest) 下 `大肥鱼桌宠-1.0.0-安装包.exe`，双击装好，开始菜单搜「大肥鱼」 |
+| 不装 DSH 也能玩 | [Release](https://github.com/Ethan1999991231/dsh-pet-whale/releases/latest) 下 `dsh-pet-whale-app-1.0.0-setup.exe`，双击装好，开始菜单搜「大肥鱼」 |
 
 EXE 版的源码在 [`app/`](app/) —— 同一个皮肤、同一套动作（尾巴、Q 弹、碎碎念、音效、设置面板、换形象全都在），只是余额改成本机直连 DeepSeek 接口：托盘图标右键填 API Key，存在 `%APPDATA%\大肥鱼桌宠\config.json`。它会铺一层透明置顶窗口，鼠标不在她身上时整层穿透，不挡你点别的东西。
 
